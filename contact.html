@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNiversity website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times-circle" ></i>
+            <ul>
+                <i class="fa fa-times-circle" onclick="hidemenu()" ></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()" ></i>
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+<!--Contact us content-->
+    <section class="location">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.438151765416!2d88.49139521401545!3d23.408534507668737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f9203987e520ab%3A0x31b68273896e4!2sKrishnagar%20Judge%20Court!5e0!3m2!1sen!2sin!4v1649332786510!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </sectiION>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                        <span>
+                            <h5>XYZ, building</h5>
+                            <p>Bangalore,Karnataka,Couragi Lane</p>
+                        </span>
+
+                    
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+0123456789</h5>
+                            <p>Monday to Saturday , 11AM to 6PM</p>
+                        </span>
+
+                    
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>website@.gmail.com</h5>
+                            <p>Email Us Your Query</p>
+                        </span>
+                    </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="enter your name" required>
+                    <input type="text"name="email"  placeholder="enter your email address" required>
+                    <input type="text" name="subject" placeholder="enter your subject" required>
+                    <textarea rows="8"name="message"  placeholder="message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+<!---- footer------>
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illum ratione soluta error fugiat voluptatum aperiam dolorem incidunt<br> aut velit, assumenda non corporis! Nulla pariatur sunt, temporibus quidem illo vel.</p>
+</section>
+
+<script>
+    var navlinks=document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right="0";
+
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
